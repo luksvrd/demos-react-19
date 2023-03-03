@@ -1,5 +1,8 @@
+import Header from "./components/Header";
+// Using a bundler so we dont need to put the file extension in the import statement.
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return <Header />;
 }
 
 export default App;
