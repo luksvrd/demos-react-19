@@ -3,6 +3,7 @@ import CatCard from "./components/CatCard";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import UserCard from "./components/UserCard";
+import Counter from "./components/counter";
 import GroceryLI from "./components/groceryLI";
 import catsData from "./data/cats";
 import groceriesData from "./data/groceries";
@@ -35,6 +36,7 @@ function App() {
           return <UserCard user={user} key={user.id.value} />;
         })}
       </ul>
+      <Counter></Counter>
     </>
   );
 }
