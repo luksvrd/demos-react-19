@@ -6,6 +6,7 @@ import UserCard from "./components/UserCard";
 import catsData from "./data/cats";
 import groceriesData from "./data/groceries";
 import userData from "./data/users";
+import NavBar from "./components/NavBar";
 // Fragment is a specifically named component of React that doesn't render anything to the DOM. It's just a way to wrap multiple elements without having to use a div.
 console.log(catsData);
 
@@ -15,6 +16,7 @@ function App() {
     // <> is a short syntactic sugar for React.Fragment, like using <div> instead of <React.Fragment>
     // The benefit of using <React.Fragment> is that it doesn't add any extra nodes to the DOM. It's just a way to wrap multiple elements without having to use a div.
     <>
+      <NavBar></NavBar>
       <Header text="Hello Kitty" />
       {/* Get all 4 of the cats to appear on the screen */}
       {catsData.map((cat) => {
