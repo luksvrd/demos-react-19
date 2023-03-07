@@ -1,9 +1,11 @@
 import CatCard from "./components/CatCard";
 import Header from "./components/Header";
 // Using a bundler so we dont need to put the file extension in the import statement.
-import GroceryLI from "./components/GroceryLI";
+import GroceryLI from "./components/groceryLI";
+import UserCard from "./components/UserCard";
 import catsData from "./data/cats";
 import groceriesData from "./data/groceries";
+import userData from "./data/users";
 // Fragment is a specifically named component of React that doesn't render anything to the DOM. It's just a way to wrap multiple elements without having to use a div.
 console.log(catsData);
 
@@ -29,6 +31,12 @@ function App() {
       <ul>
         {groceriesData.map((grocery) => {
           return <GroceryLI grocery={grocery} key={grocery.id} />;
+        })}
+      </ul>
+      {/* TODO: import users component */}
+      <ul>
+        {userData.map((user) => {
+          return <UserCard user={user} key={user.id.value} />;
         })}
       </ul>
     </>
