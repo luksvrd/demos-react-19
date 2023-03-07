@@ -1,6 +1,7 @@
 import CatCard from "./components/CatCard";
 import Header from "./components/Header";
 // Using a bundler so we dont need to put the file extension in the import statement.
+import GroceryLI from "./components/GroceryLI";
 import catsData from "./data/cats";
 import groceriesData from "./data/groceries";
 // Fragment is a specifically named component of React that doesn't render anything to the DOM. It's just a way to wrap multiple elements without having to use a div.
@@ -27,18 +28,7 @@ function App() {
       {/* TODO: nexxt to each one, render a checkbox. Check it off if purchased =ture. Hint (conditional rendering) */}
       <ul>
         {groceriesData.map((grocery) => {
-          return (
-            <li key={grocery.id}>
-              <label htmlFor={grocery.id}>{grocery.name}</label>
-              {/* TODO: nexxt to each one, render a checkbox. Check it off if purchased =ture. Hint (conditional rendering) */}
-              <input
-                type="checkbox"
-                id={grocery.id}
-                defaultChecked={grocery.purchased}
-              />
-              {/* <input type="checkbox" id={grocery.id} /> */}
-            </li>
-          );
+          return <GroceryLI grocery={grocery} key={grocery.id} />;
         })}
       </ul>
     </>
