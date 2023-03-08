@@ -21,23 +21,14 @@ function App() {
       {/* Get all 4 of the cats to appear on the screen */}
       <main className="container mx-auto space-y-8">
         <section>
-          <h2>🐱s</h2>
-          <div className="cards-container grid-cols-4">
-            {catsData.map((cat) => {
-              return <CatCard cat={cat} key={cat.id} />;
-            })}
-          </div>
-        </section>
-
-        <section>
           {/* TODO: use a 'map' to create a list for each grocery item. */}
           {/* TODO: nexxt to each one, render a checkbox. Check it off if purchased =ture. Hint (conditional rendering) */}
           <h2>🛒</h2>
-          <u className="flex list-none justify-around">
+          <ul className="flex list-none justify-around">
             {groceriesData.map((grocery) => {
               return <GroceryLI grocery={grocery} key={grocery.id} />;
             })}
-          </u>
+          </ul>
         </section>
         <section>
           <h2>👩‍💻</h2>
