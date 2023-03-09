@@ -9,5 +9,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
-
 // The ReactDOM wraps around the browser dom and provides a way to render react components into the browser dom. The ReactDOM is a separate package from react. The ReactDOM is used to render react components into the browser dom. The ReactDOM is a separate package from react. The ReactDOM is used to render react components into the browser dom.

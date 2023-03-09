@@ -24,6 +24,5 @@ Cats.propTypes = {
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
     })
-  ),
-  isRequired,
+  ).isRequired,
 };
